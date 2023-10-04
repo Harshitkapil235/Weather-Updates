@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;800&family=Roboto+Slab:wght@200;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    
+    width: 90%;
+    max-width: 500px;
+    max-height: 700px;
+    margin:40px auto;
+    color: #000000;
+    background-image: linear-gradient(to bottom , rgb(201, 6, 250) , white , 1);
+    border-radius: 20px;
+    padding: 10px 35px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.card .search {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.card .search input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 5px 25px;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+
+.card .search button{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #ebfffc;
+    width: 50px;
+    height: 50px;
+cursor: pointer;
+}
+
+.card .search button i{
+    font-size: 16px;
+}
+
+
+.card .weather .icon{
+    width: 150px;
+    margin-top: 10px;
+}
+
+.card .weather h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.card .weather h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.card .details{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 20px;
+   margin-top: 20px;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+.card .details .col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card .details .col img{
+  height: 50px;
+  width: 50px;
+}
+.card .details .col p{
+   text-wrap: nowrap;
+}
+
+.card .details .col .humidity , .card .details .col .wind , .card .details .col .max_temp , .card .details .col .min_temp {
+ font-size: 28px;
+}
+
+@media (max-width:786px) {
+    body {
+        background-image: url(https://source.unsplash.com/890x2180/?clouds,sunlight);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card .search button{
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: #ebfffc;
+        width: 30px;
+        height: 30px;
+    cursor: pointer;
+    }
+    .card .search input{
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #ebfffc;
+        color: #555;
+        padding: 5px 25px;
+        margin-right: 10px;
+        font-size: 18px;
+        margin-top: 2px;
+        width: 80%;
+        border: 2px solid red;
+    }
+        .card .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        }
+}
+@media (max-width:486px) {
+    .card .search button{
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    cursor: pointer;
+    }
+
+    .card .search input{
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #ebfffc;
+        color: #555;
+        padding: 5px 25px;
+        margin-right: 10px;
+        font-size: 18px;
+        margin-top: 2px;
+        width: 60%;
+        
+    }
+    .card .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+}
+
+
+@media (max-width:356px) {
+    .card .search button{
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    }
+
+    .card .search input{
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #ebfffc;
+        color: #555;
+        padding: 5px 15px;
+        margin-right: 5px;
+        font-size: 18px;
+        width: 50%;
+    }
+    .card .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        }
+}
+
+
